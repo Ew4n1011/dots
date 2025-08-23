@@ -26,7 +26,7 @@ ttf-liberation-sans-narrow                             # red hat's liberation sa
 ttf-dejavu                                             # font family based on the bitstream vera fonts with a wider range of characters
 
 # --------------------------------------------------- // Applications
-floorp-bin                                             # browser
+zen-browser-bin                                        # browser
 kitty                                                  # terminal
 dolphin                                                # KDE file manager
 ark                                                    # KDE file archiver
