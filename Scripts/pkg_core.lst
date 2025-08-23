@@ -1,0 +1,47 @@
+# --------------------------------------------------- // System
+plasma                                                 # KDE plasma DE
+
+# --------------------------------------------------- // Display Manager
+sddm                                                   # display manager for KDE plasma
+
+# --------------------------------------------------- // Dependencies
+xdg-desktop-portal-kde                                 # xdg desktop portal for KDE plasma
+xdg-desktop-portal-gtk                                 # file picker and dbus integration
+xdg-user-dirs                                          # Manage user directories like ~/Desktop and ~/Music
+pacman-contrib                                         # for system update check
+jq                                                     # for json processing
+imagemagick                                            # for image processing
+qt5-imageformats                                       # for dolphin image thumbnails
+ffmpegthumbs                                           # for dolphin video thumbnails
+kde-cli-tools                                          # for dolphin file type defaults
+flameshot                                              # screenshot tool
+bluez-utils                                            # bluetooth utils
+
+# --------------------------------------------------- // Fonts
+noto-fonts                                             # google noto TTF fonts
+noto-fonts-cjk                                         # google noto CJK fonts
+noto-fonts-emoji                                       # google noto color emoji font
+ttf-cascadia-code-nerd                                 # patched font cascadia code (caskaydia) from nerd fonts library
+ttf-liberation-sans-narrow                             # red hat's liberation sans narrow
+ttf-dejavu                                             # font family based on the bitstream vera fonts with a wider range of characters
+
+# --------------------------------------------------- // Applications
+floorp-bin                                             # browser
+kitty                                                  # terminal
+dolphin                                                # KDE file manager
+ark                                                    # KDE file archiver
+unzip                                                  # extracting zip files
+gwenview                                               # KDE image viewer
+vim                                                    # terminal text editor
+visual-studio-code-bin                                 # ide text editor
+kate                                                   # KDE text editor
+kcalc                                                  # KDE calculator
+mpv                                                    # video player
+vlc                                                    # video player with DVD support
+
+# --------------------------------------------------- // Shell
+oh-my-zsh-git                                          # Optional plugin manager for zsh
+pokemon-colorscripts-git                               # display pokemon sprites
+eza                                                    # file lister
+fastfetch                                              # system information fetch tool
+duf                                                    # prettier version of df for zsh

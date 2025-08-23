@@ -1,0 +1,58 @@
+# --------------------------------------------------- // System
+# downgrade                                            # downgrade packages
+power-profiles-daemon                                  # for managing power profiles from bar
+nfs-utils                                              # nfs file sharing client/server
+htop                                                   # task manager
+
+# --------------------------------------------------- // Gaming
+steam                                                  # gaming platform
+prismlauncher                                          # open source minecraft launcher
+gamemode                                               # daemon and library for game optimisations
+mangohud                                               # system performance overlay
+protontricks                                           # toolkit for proton
+
+# --------------------------------------------------- // Music
+spotify                                                # proprietary music streaming service
+spicetify-cli                                          # cli to customize spotify client
+
+# --------------------------------------------------- // Office apps
+libreoffice-still                                      # open source microsoft office
+libreoffice-still-es                                   # libreoffice spanish translation
+
+# --------------------------------------------------- // Virtualisation
+virtualbox                                             # VM client
+virtualbox-host-modules-arch                           # Kernel modules needed for virtualbox
+virtualbox-guest-iso                                   # Virtualbox guest additions ISO
+virtualbox-ext-oracle                                  # Virtualbox extensions pack
+
+# --------------------------------------------------- // Emulation
+waydroid                                               # Android emulator for wayland
+emulationstation-de                                    # frontend for browsing and launching roms
+ryujinx                                                # switch emulator
+cemu                                                   # wii u emulator
+dolphin-emu                                            # wii emulator
+azahar                                                 # 3DS emulator
+pcsx2                                                  # PS2 emulator
+retroarch                                              # emulator for many retro consoles
+retroarch-assets-ozone                                 # retroarch theme icons
+
+# --------------------------------------------------- // Retroarch cores
+libretro-gambatte                                      # Nintendo Game Boy/Game Boy Color core
+libretro-mgba                                          # Nintendo Game Boy Advance core
+libretro-melonds                                       # Nintendo DS core
+libretro-beetle-psx-hw                                 # Sony PlayStation core
+libretro-ppsspp                                        # Sony PlayStation Portable core
+
+# --------------------------------------------------- // Apps
+drawio-desktop                                         # diagrams
+filezilla                                              # sftp/ftp gui client
+gimp                                                   # image editor
+qbittorrent                                            # bittorrent client
+wine                                                   # Open Windows programs in Linux
+winetricks                                             # toolkit for wine
+obs-studio                                             # screen recorder
+termius                                                # SSH client
+chromium                                               # alternative browser
+remmina                                                # RDP client
+gparted                                                # disk formatter
+qbittorrent                                            # torrent client
