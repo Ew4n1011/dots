@@ -31,4 +31,4 @@ O|${HOME}/.config|fastfetch|fastfetch
 
  Shell 
 O|${HOME}|.zshrc|zsh
-O|${HOME}|.p10k.zsh|zsh zsh-theme-powerlevel10k
+O|${HOME}|.p10k.zsh|zsh zsh-theme-powerlevel10k-git

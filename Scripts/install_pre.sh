@@ -60,6 +60,8 @@ if pkg_installed grub && [ -f /boot/grub/grub.cfg ]; then
                     -e "s|https://github.com/Lxtharia/minegrub-theme.git|https://github.com/FeRChImoNdE/minegrub-theme-es|" \
                     -e "s|minegrub-theme/minegrub|minegrub-theme-es/minegrub|" \
                     -e "s|\.\/minegrub-theme|./minegrub-theme-es|" "${XDG_CONFIG_HOME:-$HOME}"/minegrub/install.sh
+                
+                [ "${flg_DryRun}" -eq 1 ] || sudo bash "${XDG_CONFIG_HOME:-$HOME}"/minegrub/install.sh
             fi
         else
             print_log -g "[bootloader] " -b "skip :: " "grub theme selection skipped..."
