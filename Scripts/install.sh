@@ -69,8 +69,7 @@ EOF
 done
 
 # Only export that are used outside this script
-DOTS_LOG="$(date +'%y%m%d_%Hh%Mm%Ss')"
-export flg_DryRun flg_Nvidia flg_Shell flg_Install flg_ThemeInstall DOTS_LOG
+export flg_DryRun flg_Nvidia flg_Shell flg_Install flg_ThemeInstall
 
 if [ "${flg_DryRun}" -eq 1 ]; then
     print_log -n "[test-run] " -b "enabled :: " "Testing without executing"
@@ -116,8 +115,6 @@ EOF
     shift $((OPTIND - 1))
     custom_pkg=$1
     cp "${scrDir}/pkg_core.lst" "${scrDir}/install_pkg.lst"
-    # shellcheck disable=SC2154
-    trap 'mv "${scrDir}/install_pkg.lst" "${cacheDir}/logs/${DOTS_LOG}/install_pkg.lst"' EXIT
 
     echo -e "\n#user packages" >>"${scrDir}/install_pkg.lst" # Add a marker for user packages
     if [ -f "${custom_pkg}" ] && [ -n "${custom_pkg}" ]; then
@@ -197,7 +194,7 @@ if [ $flg_Install -eq 1 ]; then
     echo ""
     print_log -g "Installation" " :: " "COMPLETED!"
 fi
-print_log -b "Log" " :: " -y "View logs at ${cacheDir}/logs/${DOTS_LOG}"
+
 if [ $flg_Install -eq 1 ] ||
     [ $flg_Restore -eq 1 ] ||
     [ $flg_Service -eq 1 ] &&

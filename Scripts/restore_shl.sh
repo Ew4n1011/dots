@@ -25,7 +25,7 @@ if pkg_installed zsh; then
         if ! pkg_installed oh-my-zsh-git; then
             if [[ ! -e "$HOME/.oh-my-zsh/oh-my-zsh.sh" ]]; then
                 print_log -sec "SHELL" -stat "cloning" "oh-my-zsh"
-                [ ${flg_DryRun} -eq 1 ] || if ! sh -c "$(curl -fsSL https://install.ohmyz.sh/)" "" --unattended --keep-zshrc; then
+                [ "${flg_DryRun}" -eq 1 ] || if ! sh -c "$(curl -fsSL https://install.ohmyz.sh/)" "" --unattended --keep-zshrc; then
                     print_log -err "oh-my-zsh update failed..." "Please resolve this issue manually LATER ..."
                     print_log -warn "Continuing" "with existing oh-my-zsh..."
                     exit 0
@@ -47,7 +47,7 @@ if pkg_installed zsh; then
         for zsh_path in "${zsh_paths[@]}"; do [[ -d $zsh_path ]] && Zsh_Path=$zsh_path && break; done
 
         # set variables
-        Zsh_rc="${ZDOTDIR:-$HOME}/.zshenv"
+        Zsh_rc="${ZDOTDIR:-$HOME}/.zshrc"
         Zsh_Path="${Zsh_Path:-$HOME/.oh-my-zsh}"
         Zsh_Plugins="$Zsh_Path/custom/plugins"
         Fix_Completion=""

@@ -216,7 +216,3 @@ echo ""
 
 print_log -g "[version]" -b " :: " "saving version info..."
 "${scrDir}/version.sh" --cache || echo "Failed to save version info."
-
-state_dir="${XDG_STATE_HOME:-$HOME/.local/state}/dots"
-clone_dir=$(git rev-parse --show-toplevel 2>/dev/null || echo "${HOME}/dots")
-[[ -f ${clone_dir}/CHANGELOG.md ]] && cp -f "${clone_dir}/CHANGELOG.md" "${state_dir}/CHANGELOG.md"

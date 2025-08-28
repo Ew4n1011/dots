@@ -98,9 +98,6 @@ prompt_timer() {
 }
 
 print_log() {
-    local executable="${0##*/}"
-    local logFile="${cacheDir}/logs/${DOTS_LOG}/${executable}"
-    mkdir -p "$(dirname "${logFile}")"
     local section=${log_section:-}
     {
         [ -n "${section}" ] && echo -ne "\e[32m[$section] \e[0m"
@@ -169,9 +166,5 @@ print_log() {
             esac
         done
         echo ""
-    } | if [ -n "${DOTS_LOG}" ]; then
-        tee >(sed 's/\x1b\[[0-9;]*m//g' >>"${logFile}")
-    else
-        cat
-    fi
+    } | cat
 }
