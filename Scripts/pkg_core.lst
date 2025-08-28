@@ -1,5 +1,7 @@
 # --------------------------------------------------- // System
 plasma                                                 # KDE plasma DE
+bibata-cursor-git                                      # Cursor
+papirus-icon-theme                                     # Icons
 
 # --------------------------------------------------- // Display Manager
 sddm                                                   # display manager for KDE plasma
