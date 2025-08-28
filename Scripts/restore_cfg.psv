@@ -30,5 +30,4 @@ B = Backup - Backup the target
 O|${HOME}/.config|fastfetch|fastfetch
 
  Shell 
-O|${HOME}|.zshrc|zsh
-O|${HOME}|.p10k.zsh|zsh zsh-theme-powerlevel10k-git
+O|${HOME}|.zshrc .p10k.zsh|zsh zsh-theme-powerlevel10k-git

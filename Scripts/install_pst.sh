@@ -27,8 +27,11 @@ if pkg_installed sddm; then
         esac
 
         if [[ ${flg_DryRun} -ne 1 ]]; then
-            sudo cp /etc/sddm.conf /etc/sddm.conf.d/dots_backup.conf
-
+            if [ -f /etc/sddm.conf ]; then
+                sudo cp /etc/sddm.conf /etc/sddm.conf.d/dots_backup.conf
+            else
+                echo "File /etc/sddm.conf doesn't exist."
+            fi
             if [[ "${sddmtheme}" == "SilentSDDM" ]]; then
                 if pkg_installed sddm-silent-theme; then
                     print_log -sec "SDDM" -stat "exist" "SilentSDDM is already installed..."
