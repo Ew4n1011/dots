@@ -3,6 +3,8 @@
 power-profiles-daemon                                  # for managing power profiles from bar
 nfs-utils                                              # nfs file sharing client/server
 htop                                                   # task manager
+openssh                                                # ssh
+bind                                                   # nslookup and other dns tools
 
 # --------------------------------------------------- // Gaming
 steam                                                  # gaming platform
@@ -56,3 +58,4 @@ chromium                                               # alternative browser
 remmina                                                # RDP client
 gparted                                                # disk formatter
 qbittorrent                                            # torrent client
+discord                                                # voice chat/messaging app

@@ -35,7 +35,7 @@ if pkg_installed grub && [ -f /boot/grub/grub.cfg ]; then
             [ "${flg_DryRun}" -eq 1 ] || sudo sed -i "/^GRUB_DEFAULT=/c\GRUB_DEFAULT=saved
             /^GRUB_THEME=/c\GRUB_THEME=\"/usr/share/grub/themes/yorha-1920x1080/theme.txt\"
             /^#GRUB_THEME=/c\GRUB_THEME=\"/usr/share/grub/themes/yorha-1920x1080/theme.txt\"
-            /^#GRUB_SAVEDEFAULT=true/c\GRUB_SAVEDEFAULT=true" /etc/default/grub
+            /^#GRUB_DEFAULT=saved/c\GRUB_DEFAULT=saved" /etc/default/grub
             [ "${flg_DryRun}" -eq 1 ] || sudo grub-mkconfig -o /boot/grub/grub.cfg
         elif [ "${grubtheme}" == "Minegrub" ]; then
             print_log -g "[bootloader] " -b "set :: " "grub theme // ${grubtheme}"
@@ -43,8 +43,7 @@ if pkg_installed grub && [ -f /boot/grub/grub.cfg ]; then
 
             [ "${flg_DryRun}" -eq 1 ] || git clone https://github.com/Lxtharia/double-minegrub-menu "${XDG_CONFIG_HOME:-$HOME}"/minegrub
 
-            [ "${flg_DryRun}" -eq 1 ] || sudo sed -i "/^GRUB_DEFAULT=/c\GRUB_DEFAULT=saved
-                /^#GRUB_SAVEDEFAULT=true/c\GRUB_SAVEDEFAULT=true" /etc/default/grub
+            [ "${flg_DryRun}" -eq 1 ] || sudo sed -i "/^GRUB_DEFAULT=/c\GRUB_DEFAULT=saved" /etc/default/grub
 
             print_log -g "[bootloader] " "Select minegrub language:" -y "\n[1]" -y " English" -y "\n[2]" -y " Español"
             read -r -p " :: Enter option number : " langopt
