@@ -27,6 +27,7 @@ noto-fonts-emoji                                       # google noto color emoji
 ttf-cascadia-code-nerd                                 # patched font cascadia code (caskaydia) from nerd fonts library
 ttf-liberation-sans-narrow                             # red hat's liberation sans narrow
 ttf-dejavu                                             # font family based on the bitstream vera fonts with a wider range of characters
+ttf-jetbrains-mono-nerd				       # patched font jetbrains mono from nerd fonts library
 
 # --------------------------------------------------- // Applications
 zen-browser-bin                                        # browser
