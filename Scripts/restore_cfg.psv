@@ -31,3 +31,6 @@ O|${HOME}/.config|fastfetch|fastfetch
 
  Shell 
 O|${HOME}|.zshrc .p10k.zsh|zsh
+
+ Rofi 
+O|${HOME}/.config|rofi|rofi

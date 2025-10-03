@@ -2,6 +2,7 @@
 plasma                                                 # KDE plasma DE
 bibata-cursor-git                                      # Cursor
 papirus-icon-theme                                     # Icons
+rofi						       # App launcher
 
 # --------------------------------------------------- // Display Manager
 sddm                                                   # display manager for KDE plasma
